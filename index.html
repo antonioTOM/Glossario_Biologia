@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <title>Glossario Biologia</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Glossario Biologia</h1>
+    </header>
+    <div class="page-content content">
+        <div class="add-container">
+            <button class="add-button" onclick="adjustTextAreaSize()">
+                <img class="add-icon" src="https://cdn-icons-png.flaticon.com/512/10015/10015290.png" alt="+">
+                <div class="add-text">Aggiungi una parola</div>
+            </button>
+        </div>
+        <div class="words-container">
+            <ul class="words-list"></ul>
+        </div>
+    </div>
+    <div class="add-word-window window">
+        <img class="exit-icon" src="https://cdn-icons-png.flaticon.com/512/5368/5368396.png" alt="X">
+        <label class="word-name-label" for="word-name">Parola da aggiungere:</label>
+        <input type="text" name="word-name" id="name">
+        <label for="word-description" class="word-description-label">Definizione della parola:</label>
+        <textarea name="word-description" id="description" rows="1">ciao</textarea>
+    </div>
+    <script>/*
+        const adjustTextAreaSize = () => {
+            const showWindow = () => {
+                const popUpWindow = document.querySelector('.window');
+                popUpWindow.style.display = 'flex';
+            }
+            const adjustSize = () => {
+                const textInputElement = document.getElementById('name');
+                const textAreaElement = document.getElementById('description');
+                const interval = setInterval(function() {
+
+                    textAreaElement.rows = 1;
+                    const txtAreaHeight = textAreaElement.scrollHeight;
+                    const txtAreaCharHeight = txtAreaHeight - 3;
+                    const txtAreaRows = Math.round(txtAreaCharHeight/17);
+                    console.log(textAreaElement)
+                    textAreaElement.rows = txtAreaRows;
+                }, 1000)
+            }
+            showWindow();
+            adjustSize();
+        }*/
+    </script>
+</body>
+</html>
